@@ -1,89 +1,263 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>FTP Server - WiFi File Share privacy policy</title>
-    <style media="screen">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FTP Server - WiFi File Share Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #f4f6f8;
+        --card: #ffffff;
+        --text: #17212b;
+        --muted: #5f6b76;
+        --border: #dde3ea;
+        --accent: #2563eb;
+        --accent-soft: #eef4ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
-        font-family: Roboto, Arial, sans-serif;
-        background: #ECEFF1;
-        color: rgba(0,0,0,0.87);
+        margin: 0;
+        font-family: Inter, Roboto, Arial, sans-serif;
+        background: linear-gradient(180deg, #f8fafc 0%, var(--bg) 100%);
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      .page {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 32px 16px 48px;
+      }
+
+      .header {
+        padding: 28px;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+        margin-bottom: 18px;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 6px 12px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 32px;
+        line-height: 1.15;
+      }
+
+      .meta {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .content {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 26px;
+        box-shadow: 0 10px 26px rgba(15, 23, 42, 0.04);
+      }
+
+      section + section {
+        margin-top: 22px;
+        padding-top: 22px;
+        border-top: 1px solid var(--border);
+      }
+
+      h2 {
+        margin: 0 0 10px;
+        font-size: 19px;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      ul {
+        margin: 10px 0 14px;
+        padding-left: 20px;
+      }
+
+      li {
+        margin: 8px 0;
       }
 
       a {
-        color: rgb(3,155,229);
-      }
-
-      #message {
-        /*max-width: 400px;*/
-        margin: 40px auto;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
-        border-radius: 2px;
-        background: white;
-        padding: 16px 24px;
-      }
-
-      #message h1 {
-        font-size: 22px;
-        font-weight: 500;
-        text-align: center;
-        margin: 0 0 16px;
-      }
-
-      #message p {
-        font-weight: 300;
-        line-height: 150%;
-      }
-
-      #message ul {
-        list-style: none;
-        margin: 16px 0 0;
-        padding: 0;
-        text-align: center;
-      }
-
-      #message li a {
-        display: inline-block;
-        padding: 8px;
-        text-transform: uppercase;
+        color: var(--accent);
         text-decoration: none;
-        font-weight: 500;
-        background: rgb(3,155,229);
-        color: white;
-        border: 1px solid rgb(3,155,229);
-        border-radius: 3px;
+        word-break: break-word;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .contact {
+        display: inline-block;
+        margin-top: 2px;
+      }
+
+      .footer {
+        text-align: center;
+        color: var(--muted);
         font-size: 14px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+        margin-top: 16px;
+        padding: 8px 0 0;
+      }
+
+      .highlight {
+        padding: 14px 16px;
+        border-radius: 12px;
+        background: #f8fbff;
+        border: 1px solid #dbe8ff;
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 18px 12px 36px;
+        }
+
+        .header,
+        .content {
+          padding: 20px;
+          border-radius: 16px;
+        }
+
+        h1 {
+          font-size: 26px;
+        }
       }
     </style>
   </head>
   <body>
-    <div id="message">
-      <h1>Privacy Policy</h1>
-    </div>
-    <div id="message">
-    <p>
-      Welcome to Nijnam Apps ("Company," "we," or "us"). Our Privacy Policy explains how we collect, use, disclose, share, process and protect your information when you use our products/services such as FTP Server - WiFi File Share app ("App", "Service").
-    </p>
-    <p>
-      <b>Information Collection and Use</b><br/>            
-      The App uses third party services that may collect information used to identify you.
-      
-      Link to privacy policy of third party service providers used by the app
-      <br/>
-      <a href="https://policies.google.com/technologies/ads">Google Admob</a>
-      <br/><br/>      
+    <main class="page">
+      <header class="header">
+        <div class="eyebrow">Privacy Policy</div>
+        <h1>FTP Server - WiFi File Share</h1>
+        <p class="meta">Published by Nijnam Apps • Last updated: June 3, 2026</p>
+      </header>
 
-      <b>We do not collect, transmit, distribute, sell or lease your data.</b><br/><br/>
-      
-      <b>Changes to this policy</b><br/>
-      Company may modify or update this Privacy Policy from time to time to reflect the changes in our business and practices, and so you should review this page periodically. When we change the policy in a material manner we will let you know and update the ‘last modified’ date at the bottom of this page.<br/><br/>
+      <div class="content">
+        <section>
+          <h2>1. Overview</h2>
+          <p>
+            This Privacy Policy explains how FTP Server - WiFi File Share handles information when you use the app.
+            The app is published by Nijnam Apps ("Developer", "we", "us", or "our").
+          </p>
+        </section>
 
-      <b>How to contact us</b><br/>
-      If you have any questions about this Privacy Policy or the Service, please contact us at dileepsankhla.ds@gmail.com<br/><br/><br/>
+        <section>
+          <h2>2. Files you share</h2>
+          <p>
+            The app lets you share files from your device over your local network by running an FTP server.
+            Your files stay on your device and are not uploaded to our servers.
+          </p>
+          <ul>
+            <li>We do not store your shared files on our servers.</li>
+            <li>We do not sell or lease your personal files.</li>
+            <li>File transfers happen directly between your device and connected devices on the same local network.</li>
+          </ul>
+        </section>
 
-      This privacy policy was last modified on May 26th 2026.
-    </p>
-  </div>
+        <section>
+          <h2>3. Third-party services</h2>
+          <p>
+            The app uses third-party services that may collect and process limited information according to their own privacy policies.
+          </p>
+          <ul>
+            <li>
+              <strong>Google AdMob</strong> for advertising.
+              <br />
+              <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
+                Google advertising privacy information
+              </a>
+            </li>
+            <li>
+              <strong>Firebase Crashlytics</strong> for crash reporting and app stability diagnostics.
+              <br />
+              <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">
+                Firebase privacy and data handling information
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>4. Crash reporting</h2>
+          <p>
+            If the app crashes or behaves unexpectedly, Firebase Crashlytics may collect crash logs, stack traces,
+            device information, and related diagnostic data to help us identify and fix problems.
+          </p>
+        </section>
+
+        <section>
+          <h2>5. Advertising</h2>
+          <p>
+            The app shows ads through Google AdMob. AdMob and its partners may collect or use information such as
+            device identifiers, IP address, and ad-related activity to provide and improve advertising services.
+          </p>
+        </section>
+
+        <section>
+          <h2>6. Permissions</h2>
+          <p>
+            The app uses file access and network permissions to provide FTP file sharing functionality. Files and folders remain on your device and are shared directly with devices that connect to your FTP server over the local network.
+          </p>
+        </section>
+
+        <section>
+          <h2>7. Data sharing</h2>
+          <p>
+            We do not share your personal files with third parties. Third-party SDKs used in the app may process limited
+            device and diagnostics data according to their own privacy policies.
+          </p>
+        </section>
+
+        <section>
+          <h2>8. Data retention</h2>
+          <p>
+            We do not keep your shared files on our servers. Any crash or diagnostic data collected by third-party services
+            is retained according to those services' own policies.
+          </p>
+        </section>
+
+        <section>
+          <h2>9. Changes to this policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. When we do, the updated version will be posted on this page.
+          </p>
+        </section>
+
+        <section>
+          <h2>10. Contact</h2>
+          <p>
+            If you have any questions about this Privacy Policy or the app, contact us at
+            <a class="contact" href="mailto:dileepsankhla.ds@gmail.com">dileepsankhla.ds@gmail.com</a>.
+          </p>
+        </section>
+      </div>
+
+      <div class="footer">Nijnam Apps</div>
+    </main>
   </body>
 </html>
